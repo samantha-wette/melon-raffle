@@ -1,7 +1,6 @@
 """Read customer data from file and run a raffle."""
 
-from random import choice
-
+import random
 
 class Customer:
     """A customer at Ubermelon."""
@@ -55,3 +54,5 @@ def run_raffle():
 
     customers = get_customers_from_file("customers.txt")
     pick_winner(customers)
+
+run_raffle()

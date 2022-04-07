@@ -1,6 +1,12 @@
 """Randomly pick customer and print customer info"""
 
-# Add code starting here
+import customers
+import random
 
-# Hint: remember to import any functions you need from
-# other files or libraries
+customers.get_customers_from_file('customers.txt')
+
+def pick_a_winner():
+    raffle_winner = random.choice(customers)
+    print(customers)
+    print(raffle_winner)
+pick_a_winner()
